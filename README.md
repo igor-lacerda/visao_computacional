@@ -4,7 +4,7 @@ Este projeto é uma ferramenta para manipulação de imagens ou vídeos que reú
 
 # Funcionalidades:
 
-- Detecção de Objetos: Identifica Pessoas, Veículos, Animais e Eletrônicos (mouse, teclado, celulares etc.) usando YOLOv8.
+- Detecção de Objetos: Identifica pessoas, veículos, animais e eletrônicos (mouse, teclado, celulares etc.) usando YOLOv8.
 - "Computer Vision": Filtro de detecção de bordas (Canny) para realce de contornos.
 - Edição de vídeo: Concatena vídeos horizontal ou verticalmente com ajustes de resolução.
 - Utilitários: Redimensionamento de imagens e extração de frames.
