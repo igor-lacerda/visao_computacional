@@ -1,6 +1,6 @@
 # Visão computacional com OpenCV e YOLO 
 
-Este projeto é um conjunto de ferramentas para o processamento de imagens ou vídeos com funcionalidades que aprendi ao longo do quarto ano da faculdade de eletrônica. Ele integra detecção de objetos (YOLOv8), detecção de bordas (Canny) e concatenação de vídeos e outras funções mais diretas.
+Este projeto é um conjunto de ferramentas para o processamento de imagens ou vídeos, com funcionalidades que aprendi ao longo do quarto ano da faculdade de engenharia eletrônica. Ele integra detecção de objetos (YOLOv8), detecção de bordas (Canny) e concatenação de vídeos e outras funções mais diretas.
 
 # Funcionalidades:
 
