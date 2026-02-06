@@ -1,4 +1,4 @@
-from utils import detect_objects_yolo_video, detect_objects_yolo_image, concatenate_videos
+from utils import detect_objects_yolo_video, concatenate_videos
 from pathlib import Path
 
 def main():
@@ -19,4 +19,5 @@ def main():
     concatenate_videos(video_path, video_path_2, orientation='v')
 
 if __name__ == "__main__":
+
     main()
