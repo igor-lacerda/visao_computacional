@@ -4,7 +4,7 @@ from pathlib import Path
 from ultralytics import YOLO
 
 def resize_single_image(
-    image, 
+    image: np.ndarray, 
     scale_factor: float
 ) -> np.ndarray:
     """
@@ -19,7 +19,7 @@ def resize_single_image(
 
     height, width = image.shape[:2]
 
-    # Casting para int porque as dimensões de pixel admitem valores decimais
+    # Casting para int porque as dimensões de pixel não admitem valores decimais
     new_height, new_width = int(height * scale_factor), int(width * scale_factor)
 
     resized_image = cv2.resize(image, (new_width, new_height), interpolation=cv2.INTER_LANCZOS4)
@@ -27,7 +27,7 @@ def resize_single_image(
     return resized_image
 
 def detect_edges_single_image(
-    image,
+    image: np.ndarray,
     low_threshold: int = 50, 
     high_threshold: int = 100, 
     blur_kernel_size: int = 5,
@@ -129,8 +129,8 @@ def _process_frame(
     return frame
 
 def detect_objects_yolo_image(
-    image, 
-    model_name: str = "yolov8s.pt",
+    image: np.ndarray, 
+    model_name: str = "yolov10n.pt",
     detect_person: bool = True,
     detect_vehicles: bool = False,
     detect_animals: bool = False,
@@ -165,7 +165,7 @@ def detect_objects_yolo_image(
 
 def detect_objects_yolo_video(
     video, 
-    model_name: str = "yolov8s.pt",
+    model_name: str = "yolov10n.pt",
     detect_person: bool = True,
     detect_vehicles: bool = False,
     detect_animals: bool = False,
@@ -512,3 +512,4 @@ def detect_edges_from_directory(
 
 if __name__ == "__main__":
     print("Este arquivo não deve ser executado diretamente, ao invés disso execute o arquivo 'main.py'")
+
