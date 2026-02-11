@@ -1,4 +1,5 @@
-from utils import detect_objects_yolo_video, concatenate_videos
+from utils.object_detection import detect_objects_yolo_video
+from utils.image_processing import concatenate_videos
 from pathlib import Path
 
 def main():
